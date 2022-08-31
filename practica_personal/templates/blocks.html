@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    {% if user_ip %}
+        <h1>Hola usuario tu ip es: {{ user_ip }}</h1>
+    {% else %} 
+        <p>Lo siento no pude encontrar tu ip</p>
+    {% endif %}
+{% endblock %}
